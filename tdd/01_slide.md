@@ -13,16 +13,17 @@
 # Unit testing won't help your code
 
 !SLIDE
+# \#2 most popular "controversial" opinion
+
 > The only reason to have Unit tests is to make sure that code that already works doesn't break. 
 Writing tests first, or writing code to the tests is ridiculous. 
 
 #### <http://programmers.blogoverflow.com/2012/08/20-controversial-programming-opinions/>
 
-!SLIDE
-\#2 most popular "controversial" opinion
-
-!SLIDE
+!SLIDE center
 # Testing is still in the minority
+
+![testing](languages.png)
 
 !SLIDE
 # "I get paid for code that works, not for tests"
