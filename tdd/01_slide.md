@@ -4,40 +4,41 @@
 !SLIDE
 # Matt Steele
 
-* Developer @ Union Pacific
+![mattdsteele](mattdsteele.jpg)
+
 * @mattdsteele
 * http://matthew-steele.com
 
-!SLIDE 
+!SLIDE
+# Unit testing won't help your code
 
+!SLIDE
+> The only reason to have Unit tests is to make sure that code that already works doesn't break. 
+Writing tests first, or writing code to the tests is ridiculous. 
+
+#### <http://programmers.blogoverflow.com/2012/08/20-controversial-programming-opinions/>
+
+!SLIDE
+\#2 most popular "controversial" opinion
+
+!SLIDE
+# Testing is still in the minority
+
+!SLIDE
+# "I get paid for code that works, not for tests"
+## - Kent Beck
+#### <http://stackoverflow.com/questions/153234/how-deep-are-your-unit-tests/153565#153565>
+
+!SLIDE
+# So why do it?
+
+!SLIDE 
 .note Inventing on Principle
 <iframe width="1020" height="630" src="http://www.youtube.com/embed/EpLr643jpnY" frameborder="0" allowfullscreen></iframe>
 
 !SLIDE
 .note String Calculator
 <iframe width="1020" height="630" src="http://www.youtube.com/embed/37YADF194kU" frameborder="0" allowfullscreen></iframe>
-
-!SLIDE
-# Unit testing won't help your code
-
-> The only reason to have Unit tests is to make sure that code that already works doesn't break. 
-Writing tests first, or writing code to the tests is ridiculous. 
-
-http://programmers.blogoverflow.com/2012/08/20-controversial-programming-opinions/
-
-!SLIDE
-\#2 most popular opinion. Why is this?
-
-!SLIDE
-Testing still in the minority - X % of projects contain it
-
-
-!SLIDE
-Kent beck: "I get paid for code that works, not for tests"
-Source: http://stackoverflow.com/questions/153234/how-deep-are-your-unit-tests/153565#153565
-
-!SLIDE
-So why do it?
 
 !SLIDE
 # 1. Proves code is correct
