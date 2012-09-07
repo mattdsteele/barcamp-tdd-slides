@@ -32,6 +32,28 @@ Writing tests first, or writing code to the tests is ridiculous.
 !SLIDE
 # So why do it?
 
+!SLIDE bullets incremental 
+
++ Correctness
++ Feedback
++ Refactoring
++ Design
++ Prevents Stupdity
+
+!SLIDE
+# 5. Proves code is correct
+
+!SLIDE
+#Two Lives
+
+!SLIDE
+# 3. Refactoring
+I do it for me 
+Provides a safety net
+
+!SLIDE
+# 4. Fast feedback loop
+
 !SLIDE 
 .note Inventing on Principle
 <iframe width="1020" height="630" src="http://www.youtube.com/embed/EpLr643jpnY" frameborder="0" allowfullscreen></iframe>
@@ -40,24 +62,8 @@ Writing tests first, or writing code to the tests is ridiculous.
 .note String Calculator
 <iframe width="1020" height="630" src="http://www.youtube.com/embed/37YADF194kU" frameborder="0" allowfullscreen></iframe>
 
-!SLIDE
-# 1. Proves code is correct
-
-!SLIDE
-Tests have two lives; when you're writing them, and then forever on.
 
 Gives you behavior preservation.
-
-!SLIDE
-# 2. Fast feedback loop
-Inventing on Principle https://vimeo.com/36579366
-Closest we can get to this with normal tools is TDD
-
-!SLIDE
-# 3. Refactoring
-I do it for me 
-Provides a safety net
-
 
 !SLIDE
 # 4. Better design
