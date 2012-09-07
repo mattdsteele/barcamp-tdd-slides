@@ -1,5 +1,5 @@
 !SLIDE
-# 5. Prevents you from being stupid
+# 1. Prevents you from being stupid
 
 !SLIDE
 #Working Memory
@@ -15,7 +15,7 @@
 > Under high-pressure conditions, higher WM individuals **used simpler (and less efficacious) problem-solving strategies**, and their performance accuracy suffered.
 
 !SLIDE
-# 6. Makes you happy
+# 0. Makes you happy
 
 !SLIDE
 <iframe src="http://www.happyprog.com/tdgotchi/" width="100%" height="700" />

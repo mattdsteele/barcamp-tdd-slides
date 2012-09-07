@@ -1,5 +1,5 @@
 !SLIDE
-# 4. Better design
+# 2. Better design
 
 .notes Testing code that hasn't been written tests beforehand is a nightmare. (example jquery code)
 .notes You write your code very differently as you're writing it. (use bkeeper's example)
@@ -252,4 +252,95 @@
 <iframe src="http://localhost:8000/specs/index.html" width="100%" height="600"></iframe>
 
 !SLIDE smaller
+    @@@javascript
+    jQuery(function($) {
+      $('form').on('submit', function() {
+        $.ajax({
+          url: '/statuses',
+        type: 'POST',
+        dataType: 'json',
+        data: {text: $(this).find('textarea').val()},
+        success: function(data) {
+          $('#statuses').append('<li>' + data.text + '</li>');
+        }
+        });
+        return false;
+      });
+
+!SLIDE smaller
+    @@@javascript
+      $.ajax({
+        url: '/statuses',
+        dataType: 'json',
+        success: function(data) {
+          var $statuses = $('#statuses');
+          for(var i = 0; data.length > i; i++) {
+            $statuses.append('<li>' + data[i].text + '</li>');
+          }
+        }
+      })
+    });
+
+!SLIDE smaller
+    @@@javascript
+    var Monologue = {
+      Model: {},
+      View: {},
+      Collection: {}
+    };
+
+    Monologue.Model.Status = Backbone.Model.extend({
+    });
+
+    Monologue.Collection.Statuses = Backbone.Collection.extend({
+      model: Monologue.Model.Status,
+      localStorage: new Backbone.LocalStorage('Statuses')
+    });
+
+!SLIDE smaller
+    @@@javascript
+    Monologue.View.PostStatus = Backbone.View.extend({
+      events: {
+        'submit' : 'submit'
+      },
+      submit: function(e) {
+        e.preventDefault();
+        var $input = this.$el.find('textarea');
+        this.collection.create({text: $input.val()});
+        $input.val('');
+        return false;
+      }
+    });
+
+!SLIDE smaller
+    @@@javascript
+    Monologue.View.StatusList = Backbone.View.extend({
+      initialize: function() {
+        _.bindAll(this, 'render', 'add');
+        this.collection.on('reset', this.render);
+        this.collection.on('add', this.add);
+        this.collection.fetch();
+      },
+
+      render: function() {
+        this.collection.each(_.bind(this.add, this));
+      },
+
+      add: function(model) {
+        this.$el.append(this.template(model));
+      },
+
+      template: function(model) {
+        return this.make('li', {'class':'status'}, model.get('text'));
+      }
+    });
+
+!SLIDE smaller
+    @@@javascript
+    jQuery(function($) {
+      var statuses = new Monologue.Collection.Statuses();
+
+      new Monologue.View.PostStatus({el: $('#new-status'), collection: statuses});
+      new Monologue.View.StatusList({el: $('#statuses'), collection: statuses});
+    });
 

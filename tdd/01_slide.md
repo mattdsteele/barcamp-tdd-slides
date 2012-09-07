@@ -47,7 +47,7 @@ Writing tests first, or writing code to the tests is ridiculous.
 #Two Lives
 
 !SLIDE
-# 3. Refactoring
+# 4. Refactoring
 
 !SLIDE smaller
     @@@java
@@ -144,7 +144,7 @@ Writing tests first, or writing code to the tests is ridiculous.
     // drunk, fix later
 
 !SLIDE
-# 4. Fast feedback loop
+# 3. Fast feedback loop
 
 !SLIDE 
 <iframe width="1020" height="630" src="http://www.youtube.com/embed/EpLr643jpnY" frameborder="0" allowfullscreen></iframe>
