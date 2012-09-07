@@ -1,4 +1,11 @@
 !SLIDE
+# 4. Better design
+
+.notes Testing code that hasn't been written tests beforehand is a nightmare. (example jquery code)
+.notes You write your code very differently as you're writing it. (use bkeeper's example)
+.notes Solving design problems solves testing problems
+
+!SLIDE
 <iframe src="http://localhost:8000/index.html" width="100%" height="600"></iframe>
 
 !SLIDE smaller
@@ -110,6 +117,7 @@
       events: {
         'submit' : 'submit'
       },
+
       submit: function(e) {
         e.preventDefault();
         var $input = this.$el.find('textarea');
@@ -124,6 +132,16 @@
       $el.trigger('submit');
       expect($el.find('textarea').val()).toEqual('');
     });
+
+!SLIDE smaller
+    @@@javascript
+    submit: function(e) {
+      e.preventDefault();
+      var $input = this.$el.find('textarea');
+      this.collection.create({text: $input.val()});
+      $input.val('');
+      return false;
+    }
 
 !SLIDE smaller
     @@@javascript
@@ -188,6 +206,22 @@
                         model.get('text'));
       }
 
+!SLIDE smaller
+    @@@javascript
+    jQuery(function($) {
+      var statuses = new Monologue.Collection.Statuses();
+
+      new Monologue.View.PostStatus({
+        el: $('#new-status'), 
+        collection: statuses
+      });
+
+      new Monologue.View.StatusList({
+        el: $('#statuses'),
+        collection: statuses
+      });
+    });
+
 !SLIDE
 <iframe src="http://localhost:8000/specs/index.html" width="100%" height="600"></iframe>
 
@@ -216,3 +250,6 @@
 
 !SLIDE
 <iframe src="http://localhost:8000/specs/index.html" width="100%" height="600"></iframe>
+
+!SLIDE smaller
+

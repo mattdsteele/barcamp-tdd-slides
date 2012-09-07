@@ -35,8 +35,8 @@ Writing tests first, or writing code to the tests is ridiculous.
 !SLIDE bullets incremental 
 
 + Correctness
-+ Feedback
 + Refactoring
++ Feedback
 + Design
 + Prevents Stupdity
 
@@ -48,46 +48,108 @@ Writing tests first, or writing code to the tests is ridiculous.
 
 !SLIDE
 # 3. Refactoring
-I do it for me 
-Provides a safety net
+
+!SLIDE smaller
+    @@@java
+
+    private int get_state_index(string state) {
+     if(state == "AL")
+       return 0;
+     if(state == "AK")
+       return 1;
+     if(state == "AZ")
+       return 2;
+     if(state == "AR")
+       return 3;
+     if(state == "CA")
+       return 4;
+     if(state == "CO")
+       return 5;
+     if(state == "CT")
+       return 6;
+     if(state == "DE")
+       return 7;
+     if(state == "FL")
+       return 8;
+     if(state == "GA")
+       return 9;
+     if(state == "HI")
+       return 10;
+     if(state == "ID")
+       return 11;
+     if(state == "IL")
+       return 12;
+     if(state == "IN")
+       return 13;
+     if(state == "IA")
+       return 14;
+     if(state == "KS")
+       return 15;
+     if(state == "KY")
+       return 16;
+     if(state == "LA")
+       return 17;
+     if(state == "ME")
+       return 18;
+     if(state == "MD")
+       return 19;
+     if(state == "MA")
+       return 20;
+     if(state == "MI")
+
+!SLIDE smaller
+    @@@javascript
+    var srcData = data;
+    if (data.data && data.data.data) {
+          data = data.data.data;
+    } else if (data.data) {
+          data = data.data;
+    }
+     
+     if (!data) {
+           return;
+     }
+
+!SLIDE smaller
+    @@@java
+                                                      } // if 26
+
+                                                    } // else if 25
+
+                                                 }  // else if 24
+
+                                              } // else if 23
+
+                                           } // else if 22
+
+                                        } // else if 21
+
+                                     } // else if 20
+
+                                 } // else if 19
+
+                              } // else if 18
+                              
+                           } // else if 17
+                        } //else if 16
+                     } // else if 15
+                  } // else if 14
+               } // else if 13
+            } // else if 12
+         } // else if 11
+
+!SLIDE
+
+    @@@java
+    // drunk, fix later
 
 !SLIDE
 # 4. Fast feedback loop
 
 !SLIDE 
-.note Inventing on Principle
 <iframe width="1020" height="630" src="http://www.youtube.com/embed/EpLr643jpnY" frameborder="0" allowfullscreen></iframe>
 
 !SLIDE
-.note String Calculator
 <iframe width="1020" height="630" src="http://www.youtube.com/embed/37YADF194kU" frameborder="0" allowfullscreen></iframe>
 
 
-Gives you behavior preservation.
-
-!SLIDE
-# 4. Better design
-Testing code that hasn't been written tests beforehand is a nightmare. (example jquery code)
-You write your code very differently as you're writing it. (use bkeeper's example)
-Solving design problems solves testing problems
-
-!SLIDE
-# 5. Prevents you from being stupid
-
-Working Memory
-
-http://www.ncbi.nlm.nih.gov/pubmed/17983308
-
-!SLIDE
-
-> Under low-pressure conditions, the higher individuals' WM, the more likely they were to use computationally demanding algorithms ... and the more accurate their math performance. Under high-pressure conditions, higher WM individuals used simpler (and less efficacious) problem-solving strategies, and their performance accuracy suffered.
-
-!SLIDE
-# 6. Makes you happy
-
-TDDGotchi http://www.happyprog.com/tdgotchi/
-
-!SLIDE
-Thanks to
-
-Katrina Owen - http://www.confreaks.com/videos/1071-cascadiaruby2012-therapeutic-refactoring
