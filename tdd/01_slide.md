@@ -2,9 +2,25 @@
 # Zen and the art of TDD #
 
 !SLIDE
+# Matt Steele
+
+* Developer @ Union Pacific
+* @mattdsteele
+* http://matthew-steele.com
+
+!SLIDE 
+
+.note Inventing on Principle
+<iframe width="1020" height="630" src="http://www.youtube.com/embed/EpLr643jpnY" frameborder="0" allowfullscreen></iframe>
+
+!SLIDE
+.note String Calculator
+<iframe width="1020" height="630" src="http://www.youtube.com/embed/37YADF194kU" frameborder="0" allowfullscreen></iframe>
+
+!SLIDE
 # Unit testing won't help your code
 
-> The only reason to have Unit tests is to make sure that code that already works doesn’t break. 
+> The only reason to have Unit tests is to make sure that code that already works doesn't break. 
 Writing tests first, or writing code to the tests is ridiculous. 
 
 http://programmers.blogoverflow.com/2012/08/20-controversial-programming-opinions/
@@ -15,12 +31,6 @@ http://programmers.blogoverflow.com/2012/08/20-controversial-programming-opinion
 !SLIDE
 Testing still in the minority - X % of projects contain it
 
-!SLIDE
-# Matt Steele
-
-* Developer @ Union Pacific
-* @mattdsteele
-* http://matthew-steele.com
 
 !SLIDE
 Kent beck: "I get paid for code that works, not for tests"
