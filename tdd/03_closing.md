@@ -18,10 +18,11 @@
 # 0. Makes you happy
 
 !SLIDE
-<iframe src="http://www.happyprog.com/tdgotchi/" width="100%" height="700" />
+<iframe src="http://www.happyprog.com/pulse/" width="100%" height="700" />
 
 !SLIDE
-<iframe src="http://www.happyprog.com/pulse/" width="100%" height="700" />
+<iframe src="http://www.happyprog.com/tdgotchi/" width="100%" height="700" />
+
 !SLIDE small
 # Thanks to
 

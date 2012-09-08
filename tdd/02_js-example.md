@@ -6,6 +6,9 @@
 .notes Solving design problems solves testing problems
 
 !SLIDE
+# Testing is hard when we write bad code
+
+!SLIDE
 <iframe src="http://localhost:8000/index.html" width="100%" height="600"></iframe>
 
 !SLIDE smaller
@@ -126,6 +129,10 @@
       }
     });
 
+!SLIDE
+<iframe src="http://localhost:8000/specs/index.html" width="100%" height="600"></iframe>
+
+
 !SLIDE smaller
     @@@javascript
     it("clears the form", function() {
@@ -142,6 +149,9 @@
       $input.val('');
       return false;
     }
+
+!SLIDE
+<iframe src="http://localhost:8000/specs/index.html" width="100%" height="600"></iframe>
 
 !SLIDE smaller
     @@@javascript
@@ -205,6 +215,9 @@
                         {'class':'status'}, 
                         model.get('text'));
       }
+
+!SLIDE
+<iframe src="http://localhost:8000/specs/index.html" width="100%" height="600"></iframe>
 
 !SLIDE smaller
     @@@javascript

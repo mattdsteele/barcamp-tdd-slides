@@ -22,7 +22,9 @@ Writing tests first, or writing code to the tests is ridiculous.
 
 !SLIDE center
 # Testing is still in the minority
+![testing](omaha-tdd-stats.png)
 
+!SLIDE center
 ![testing](languages.png)
 
 !SLIDE
