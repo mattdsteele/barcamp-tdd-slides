@@ -153,6 +153,9 @@ Writing tests first, or writing code to the tests is ridiculous.
 <iframe width="1020" height="630" src="http://www.youtube.com/embed/EpLr643jpnY" frameborder="0" allowfullscreen></iframe>
 
 !SLIDE
+## <http://mrdoob.com/145/Code_editor>
+
+!SLIDE
 <iframe width="1020" height="630" src="http://www.youtube.com/embed/37YADF194kU" frameborder="0" allowfullscreen></iframe>
 
 
