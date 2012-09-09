@@ -9,7 +9,7 @@
 # Testing is hard when we write bad code
 
 !SLIDE
-<iframe src="http://localhost:8000/index.html" width="100%" height="600"></iframe>
+<iframe src="http://www.matthew-steele.com/talks/barcamp-app/index.html" width="100%" height="600"></iframe>
 
 !SLIDE smaller
 
@@ -81,7 +81,7 @@
 
 
 !SLIDE
-<iframe src="http://localhost:8000/specs/index.html" width="100%" height="600"></iframe>
+<iframe src="http://www.matthew-steele.com/talks/barcamp-app/specs/index.html" width="100%" height="600"></iframe>
 
 !SLIDE smaller
 
@@ -130,7 +130,7 @@
     });
 
 !SLIDE
-<iframe src="http://localhost:8000/specs/index.html" width="100%" height="600"></iframe>
+<iframe src="http://www.matthew-steele.com/talks/barcamp-app/specs/index.html" width="100%" height="600"></iframe>
 
 
 !SLIDE smaller
@@ -151,7 +151,7 @@
     }
 
 !SLIDE
-<iframe src="http://localhost:8000/specs/index.html" width="100%" height="600"></iframe>
+<iframe src="http://www.matthew-steele.com/talks/barcamp-app/specs/index.html" width="100%" height="600"></iframe>
 
 !SLIDE smaller
     @@@javascript
@@ -217,7 +217,7 @@
       }
 
 !SLIDE
-<iframe src="http://localhost:8000/specs/index.html" width="100%" height="600"></iframe>
+<iframe src="http://www.matthew-steele.com/talks/barcamp-app/specs/index.html" width="100%" height="600"></iframe>
 
 !SLIDE smaller
     @@@javascript
@@ -236,7 +236,7 @@
     });
 
 !SLIDE
-<iframe src="http://localhost:8000/specs/index.html" width="100%" height="600"></iframe>
+<iframe src="http://www.matthew-steele.com/talks/barcamp-app/specs/index.html" width="100%" height="600"></iframe>
 
 
 !SLIDE smaller
@@ -262,7 +262,7 @@
     });
 
 !SLIDE
-<iframe src="http://localhost:8000/specs/index.html" width="100%" height="600"></iframe>
+<iframe src="http://www.matthew-steele.com/talks/barcamp-app/specs/index.html" width="100%" height="600"></iframe>
 
 !SLIDE smaller
     @@@javascript
